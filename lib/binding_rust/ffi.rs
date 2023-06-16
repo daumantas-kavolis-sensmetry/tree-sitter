@@ -8,7 +8,9 @@ extern "C" {
     pub(crate) fn dup(fd: std::os::raw::c_int) -> std::os::raw::c_int;
 }
 
-use crate::{Language, Node, Parser, Query, QueryCursor, QueryError, Tree, TreeCursor, LookaheadIterator};
+use crate::{
+    Language, LookaheadIterator, Node, Parser, Query, QueryCursor, QueryError, Tree, TreeCursor,
+};
 use std::{marker::PhantomData, mem::ManuallyDrop, ptr::NonNull, str};
 
 impl Language {
