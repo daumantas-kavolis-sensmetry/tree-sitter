@@ -10,3 +10,4 @@ mod tags_test;
 mod test_highlight_test;
 mod test_tags_test;
 mod tree_test;
+mod language_test;
